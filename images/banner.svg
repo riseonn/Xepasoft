@@ -1,0 +1,116 @@
+<svg viewBox="0 0 816 729.6" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#065f46" />
+    </linearGradient>
+    <!-- Futuristic circuit pattern -->
+    <pattern id="circuitPattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <path d="M10 10 h40 v40 h40 v40 h-40 v40 h40" stroke="#34d399" stroke-width="1.5" fill="none" opacity="0.25"/>
+      <path d="M150 150 h-40 v-40 h-40 v-40 h40 v-40 h-40" stroke="#34d399" stroke-width="1.5" fill="none" opacity="0.25"/>
+      <path d="M0 100 h200 M100 0 v200" stroke="#34d399" stroke-width="0.5" fill="none" opacity="0.15"/>
+      <circle cx="50" cy="50" r="3" fill="#10b981" opacity="0.4"/>
+      <circle cx="130" cy="130" r="3" fill="#10b981" opacity="0.4"/>
+      <circle cx="50" cy="130" r="3" fill="#10b981" opacity="0.4"/>
+      <circle cx="130" cy="50" r="3" fill="#10b981" opacity="0.4"/>
+      <circle cx="100" cy="100" r="5" fill="#10b981" opacity="0.2"/>
+    </pattern>
+    
+    <!-- Glow effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <!-- Hexagon pattern -->
+    <pattern id="hexPattern" width="100" height="100" patternUnits="userSpaceOnUse" patternTransform="scale(0.7)">
+      <path d="M50 0 L93.3 25 L93.3 75 L50 100 L6.7 75 L6.7 25 Z" fill="none" stroke="#a7f3d0" stroke-width="1" opacity="0.2"/>
+    </pattern>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="816" height="729.6" fill="url(#bgGradient)"/>
+  
+  <!-- Hexagon pattern overlay -->
+  <rect width="816" height="729.6" fill="url(#hexPattern)"/>
+  
+  <!-- Circuit pattern overlay -->
+  <rect width="816" height="729.6" fill="url(#circuitPattern)"/>
+  
+  <!-- Futuristic elements -->
+  <g opacity="0.8">
+    <!-- Data flow lines -->
+    <path d="M-50,200 Q200,50 400,300 T850,400" stroke="#4ade80" stroke-width="2" fill="none" filter="url(#glow)"/>
+    <path d="M-100,400 Q150,250 350,500 T900,600" stroke="#4ade80" stroke-width="2" fill="none" filter="url(#glow)"/>
+    
+    <!-- Pulse circles -->
+    <circle cx="200" cy="300" r="5" fill="#a7f3d0">
+      <animate attributeName="r" values="5;20;5" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.1;0.8" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="400" r="5" fill="#a7f3d0">
+      <animate attributeName="r" values="5;20;5" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.1;0.8" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="150" r="5" fill="#a7f3d0">
+      <animate attributeName="r" values="5;20;5" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.1;0.8" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Tech nodes -->
+  <g>
+    <circle cx="150" cy="200" r="30" fill="#059669" opacity="0.7"/>
+    <circle cx="150" cy="200" r="35" stroke="#34d399" stroke-width="1" fill="none" opacity="0.5"/>
+    <circle cx="150" cy="200" r="40" stroke="#34d399" stroke-width="0.5" fill="none" opacity="0.3"/>
+    
+    <circle cx="650" cy="450" r="40" fill="#059669" opacity="0.7"/>
+    <circle cx="650" cy="450" r="45" stroke="#34d399" stroke-width="1" fill="none" opacity="0.5"/>
+    <circle cx="650" cy="450" r="50" stroke="#34d399" stroke-width="0.5" fill="none" opacity="0.3"/>
+    
+    <circle cx="350" cy="600" r="25" fill="#059669" opacity="0.7"/>
+    <circle cx="350" cy="600" r="30" stroke="#34d399" stroke-width="1" fill="none" opacity="0.5"/>
+    <circle cx="350" cy="600" r="35" stroke="#34d399" stroke-width="0.5" fill="none" opacity="0.3"/>
+  </g>
+  
+  <!-- Abstract tech elements -->
+  <g opacity="0.9">
+    <!-- Digital data particles -->
+    <g fill="#a7f3d0" opacity="0.8">
+      <rect x="100" y="100" width="3" height="3"/>
+      <rect x="120" y="90" width="2" height="2"/>
+      <rect x="140" y="110" width="4" height="4"/>
+      <rect x="700" y="350" width="3" height="3"/>
+      <rect x="680" y="380" width="2" height="2"/>
+      <rect x="720" y="400" width="4" height="4"/>
+      <rect x="300" y="550" width="3" height="3"/>
+      <rect x="280" y="580" width="2" height="2"/>
+      <rect x="320" y="600" width="4" height="4"/>
+    </g>
+    
+    <!-- Code symbols with glow -->
+    <g font-family="monospace" font-size="18" fill="#34d399" filter="url(#glow)">
+      <text x="700" y="120">&lt;/&gt;</text>
+      <text x="650" y="170">{}</text>
+      <text x="720" y="150">()</text>
+      <text x="100" y="620">&lt;/&gt;</text>
+      <text x="150" y="650">{}</text>
+      <text x="80" y="650">()</text>
+    </g>
+  </g>
+  
+  <!-- HUD-like elements -->
+  <g stroke="#10b981" stroke-width="1" fill="none">
+    <rect x="50" y="50" width="100" height="40" rx="5" opacity="0.4"/>
+    <rect x="666" y="50" width="100" height="40" rx="5" opacity="0.4"/>
+    <rect x="50" y="639.6" width="100" height="40" rx="5" opacity="0.4"/>
+    <rect x="666" y="639.6" width="100" height="40" rx="5" opacity="0.4"/>
+    
+    <!-- Corner brackets -->
+    <path d="M20,20 h30 v30" opacity="0.7"/>
+    <path d="M796,20 h-30 v30" opacity="0.7"/>
+    <path d="M20,709.6 h30 v-30" opacity="0.7"/>
+    <path d="M796,709.6 h-30 v-30" opacity="0.7"/>
+  </g>
+</svg>
